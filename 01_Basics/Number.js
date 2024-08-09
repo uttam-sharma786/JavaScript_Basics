@@ -12,9 +12,9 @@
 
 //######################################## Math #########################################
 
-// console.log(Math);
+console.log(Math);
 // console.log(Math.abs(4.5))
-const mathValue = 4.534534254
+const mathValue = 5.9234
 // console.log(Math.ceil(mathValue))
 // console.log(Math.floor(mathValue))
 
@@ -27,9 +27,14 @@ const mathValue = 4.534534254
 // console.log(Math.max(45,6,7,29))
 
 
-console.log(Math.random());
-console.log((Math.random()*10) +1);
+// console.log(Math.random()); // 0 to 1 range
+console.log((Math.random()*10)+1);
 
+console.log(Math.floor(mathValue))
+// console.log(Math.floor(Math.random(mathValue)*10)+1)
 
+const max = 20;
+const min = 10;
+console.log(Math.floor(Math.random(mathValue)*max-min+1)+min)
 
 
