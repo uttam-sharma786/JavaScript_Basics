@@ -1,6 +1,13 @@
 const myArray = [1,2,4,5,7]
 
+// const array = []
+
+console.log(myArray[0]);
+
+
 console.log(myArray)
+
+
 
 // console.log(myArray.push(6));
 // console.log(myArray)
@@ -26,11 +33,11 @@ console.log(myArray)
 
 // console.log(myArray.includes(8));
 
-// console.log(myArray.indexOf(80));
+console.log(myArray.indexOf(4));
 
 
 // console.log("A",myArray.splice(1,3));
-console.log("B",myArray.slice(1,3));
+// console.log("B",myArray.slice(1,3));
 
 
 
