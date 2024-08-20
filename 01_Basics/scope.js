@@ -28,8 +28,8 @@ function one(){
 
     function two(){
         const website = "googlemeet"
-        console.log(username);
-        console.log(website);
+        // console.log(username);
+        // console.log(website);
         
     }
     // console.log(website);
@@ -38,7 +38,7 @@ function one(){
     
 }
 
-// one()
+one()
 
 
 
@@ -71,12 +71,31 @@ function addOne(num){
 
 // expression declartion
 // hosting concept
-console.log(addTwo(5))
+/*
+Hosting is a Javascript features that allow you to use variable and functions
+ before they are declared.This means that you can use variable and functions 
+ before they are defined in your code. Hosting is done by the JavaScript engine, 
+ which menes the declaration of variables and functions to the top of their scope
+*/
+// console.log(addTwo(5))
 const addTwo = function(num){
     return num +2
 }
 
-// console.log(addTwo(5))
+console.log(addTwo(5))
+
+/*
+What is temporal dead zone in javascript
+Temporal dead zone is a concept in JS related to let and const declarations.
+Variables with let or const declarations are hoisted to top of their scope
+but they are not immediately avaiabe in the code. This means that you can
+use a variable before it is declared but the value of the variable will be
+undefined until it is assigned a value
+*/
+// console.log(x);
+let x = 5;
+console.log(x);
+
 
 
 

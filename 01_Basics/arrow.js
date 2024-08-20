@@ -1,4 +1,9 @@
 // arrow function
+/*
+Arrow function are a shortand syntax for writing function in javascript. 
+They provide a more concise and readable way to write function,especially 
+when using anonymous functions
+*/
 
 // current context refer 
 
@@ -10,7 +15,7 @@ const user= {
 
     welcomeMessage: function(){
         console.log(`${this.username}, welcome to web page`);
-        console.log(this);
+        // console.log(this);
         
     }
 
@@ -27,41 +32,46 @@ const user= {
 
 // arrow 
 
-// function call(){
-//     let username = "uttam"
-//     console.log(this.username);
+function call(){
+    const username = "uttam"
+    console.log(username);
     
-// }
-// call()
+}
+call();
 
 
-// const one = function(){
-//     let username = "Uttam"
-//     console.log(this.username);
+
+const one = function(){
+    let username = "Uttam"
+    console.log(username);
     
-// }
+}
 
-// one()
+one()
 
-// const Milk = () => {
-//     let username = "Uttam"
-//     console.log(this);
+const Milk = () => {
+    let username = "Uttam"
+    console.log(username);
     
-// }
+}
 
-// Milk()
+Milk()
 
-//  const addTwo = (num1,num2) => {
-//     return num1+num2
-// }
-// console.log(addTwo(3,4));
+function greeting(){
+
+}
+
+ const addTwo1 = (num1,num2) => {
+    return num1+num2
+}
+console.log(addTwo1(3,4));
 
 // implicate
 
-// const addTwo = (num1,num2) => ( num1 + num2)
+const addTwo2 = (num1,num2) => ( num1 + num2)
 // console.log(addTwo(3,4));
 
-const addTwo = (num1,num2) => ({username:"Uttam"})
+const addTwo3 = (num1,num2) => ({username:"Uttam"})
 
 
 const myArray = [3,4,56,7]
