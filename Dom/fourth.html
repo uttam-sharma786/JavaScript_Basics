@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Edit and remove element in DOM</title>
+</head>
+<body style="background-color: #212121; color:#fff;">
+    <ul class="language">
+        <li> JavaScirpt</li>
+    </ul>
+</body>
+
+<script>
+    // list item create
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("Java")
+    addLanguage("python")
+    
+    // addLanguage("typescript")
+
+    function addOptiLanguage(langName){
+        const li = document.createElement('li');
+        const addText = (document.createTextNode(langName))
+        li.appendChild(addText)
+        document.querySelector('.language').appendChild(li);
+
+    }
+    // addOptiLanguage('golang')
+    // addOptiLanguage('ruby')
+    // Edit
+    // const secondLang = document.querySelector("li:nth-child(2)")
+    // // secondLang.innerHTML = "Mojo"
+    // const newli =  document.createElement('li')
+    // const value = newli.textContent = "Mojo343"
+    // secondLang.replaceWith(value)
+
+    // edit
+
+    // const firstLange = document.querySelector("li:first-child")
+    // firstLange.outerHTML = '<li> Java </li>'
+    
+    // remove
+
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+</script>
+</html>

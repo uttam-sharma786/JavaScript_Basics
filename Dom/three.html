@@ -1,9 +1,46 @@
-<i class="fas fa-drafting-compass    "></i>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+<div>
+   
+
+<p>Create a p element and append it to "myDiv":</p>
+
+<div id="myDIV" style="padding:16px;background-color:rgb(153, 76, 76)">
+<h3>A DIV element</h3>
+
+</div>
+    
+</body>
+<script>
+    // const div = document.createElement('div')
+    // console.log(div);
+    // div.className = "main"
+
+    // div.id = Math.round(Math.random()*10+1)
+    // div.setAttribute("title","generated title")
+    // div.style.backgroundColor = "green"
+    // div.style.padding = "12px"
+
+    // const addText = document.createTextMode("code with Uttam")
+    // div.appendChild(addText)
+
+    // document.body.appendChild(div)
 
 
+    const para = document.createElement("p");
+    const test = para.innerHTML = "This is a paragra.";
+    // console.log(test);
+    
 
-
-
-
-
-
+// Append to another element:
+   const demo = document.getElementById("myDIV").appendChild(para);
+    console.log(demo);
+    
+</script>
+</html>
