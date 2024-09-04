@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event-2 </title>
+</head>
+<body>
+    <h1>Code with Uttam</h1>
+    <button id="Stop">Stop</button>
+</body>
+<script>
+   
+   const sayHitesh = function(){
+        console.log("Uttam");
+    }
+    sayHitesh()
+
+    const changeText = function(){
+        document.querySelector("h1").innerHTML = "Hi I am COding person"
+    }
+    changeText()
+
+    // const changeMe = setInterval(changeText, 5000)
+    // console.log(changeMe);
+    
+
+    document.querySelector("#Stop").addEventListener('click',function(){
+        clearTimeout(changeMe)
+        console.log("stopped");
+        
+    })
+   
+
+</script>
+</html>

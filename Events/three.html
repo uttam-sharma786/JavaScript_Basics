@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>code with Uttam</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+<script>
+
+
+   setTimeout(function(){
+    console.log("uttam");
+    
+   },2000)  
+
+//    setInterval(() => {
+    
+//    }, interval);
+
+  
+  // here we are using function
+
+   const sayUttam = function(){
+    console.log("Uttam");
+    
+   }
+   setTimeout(sayUttam,2000)
+
+   // using function change text
+
+   const changeText = function (){
+    document.querySelector('h1').innerHTML = "we are learning"
+  }
+  const changeMe = setTimeout(changeText,4000)
+
+//   clearTimeout(changeMe)
+
+// apply on event
+document.querySelector('#stop').addEventListener('click',function(){
+    clearTimeout('changeMe')
+    console.log("Stopped");
+    
+})
+</script>
+</html>

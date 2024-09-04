@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> html Events </title>
+</head>
+<body style="background-color: #212121; color:#ffff">
+    <h2> Amazing image</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id = "image1" src="https://images.pexels.com/photos/19149595/pexels-photo-19149595.jpeg" alt="photoshop"></li>
+            <li><img width="200px" id = "image2" src="https://images.pexels.com/photos/19149579/pexels-photo-19149579.jpeg" alt="photoshop2"></li>
+            <li><img width="200px" id = "image3" src="https://images.pexels.com/photos/16738855/pexels-photo-16738855.jpeg" alt="photoshop3"></li>
+            <li><img width="200px" id = "image4" src="https://images.pexels.com/photos/6185650/pexels-photo-6185650.jpeg" alt="photoshop4"></li>
+            <li><img width="200px" id = "image5" src="https://images.pexels.com/photos/16745023/pexels-photo-16745023.jpeg" alt="photoshop5"></li>
+            <li><img width="200px" id=  "image6" src="https://images.pexels.com/photos/15164370/pexels-photo-15164370.jpeg" alt="photoshop6"></li>
+            <li><a href="https://google.com" id="google" target="_blank" style="color:#ffff">google com</a></li>
+        </ul>
+        
+    </div>
+     
+
+    
+</body>
+<script>
+     // type,timestamp, defaultPrevented, target,toElement,srcElement,curretTarget,
+    // clientx,clientY,screenX,screenY,
+    //altkey,ctrlkey, shiftkey, keycode
+
+    // document.getElementById("image2").onclick = function(){
+    //    console.log(alert("image2 clicked"));
+        
+    // }
+
+   
+
+
+    document.getElementById("image2").addEventListener('click',function(e){
+        e.preventDefault()
+        console.log("hi");
+        
+        
+        
+    },false)
+
+
+
+   
+    
+    // document.getElementById("google").addEventListener('click',function(e){
+    //     // e.preventDefault()
+    //     // e.stopPropagation()
+    //     console.log("google clicked");
+        
+    // },false)
+
+</script>
+</html>
+
+
+<!------
+Event Propagation in javascript refers to the way events,
+like : mouse click or key presses, traverse
+
+#There are three phases to event propagation
+1. Capture
+2. target
+3. bubble
+
+Capture phase: The event starts at the outermost element and down the DOM tree to the 
+target element.
+
+Bubble phase: In this phase, the event travels back up the DOM tree from the target element
+to the outermost element. Bubble phase is the default behaviour
+
+Event propagation can be stopped and modified using the stopPropagation() method.
+which prevents further propagation of the event in both capturing and bubbling phases.
+However,this methed does not prevent default behaviours, for which we would use 
+preventDefault()
+-->
+
+<!-- // document.getElementById("image2").addEventListener('click',function(e){
+    //     e.stopPropagation()
+    // },false) -->
